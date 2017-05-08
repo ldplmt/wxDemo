@@ -1,0 +1,15 @@
+<view class="classname" style="font:800 40px '';margin:20px;">电影详情</view>
+<view class="movie">
+    <view class="classname" style="margin:10px;display: flex;">
+      <image src="{{movieDetail_list.src}}" style="height: 200px;width: 150px;float:left;"></image>
+      <view class="info" style="float:left;font-size:12px;box-sizing: border-box;margin:10px 0px 0px 10px;">
+          <view class="title" style="margin:10px;">导演:{{movieDetail_list.info_A}}</view>
+          <view class="title" style="margin:10px;">主演:{{movieDetail_list.info_B}}</view>
+          <view class="title" style="margin:10px;">片长:{{movieDetail_list.info_C}}</view>
+          <view class="title" style="margin:10px;">类型:{{movieDetail_list.info_D}}</view>
+      </view>
+    </view>
+</view>
+ <button bindtap="show_play" style="background:#00ffff;color:red;font-size:14px;width:120px;">立即观看</button>
+<view>剧情简介:</view>
+<view class="inf" style="font-size:14px;text-indent:2em;">{{movieDetail_list.info_E}}</view>

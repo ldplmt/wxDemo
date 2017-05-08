@@ -1,0 +1,21 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" style="border: 1px solid yellow;margin-top:10px;">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="movie" style="font:800 30px '';margin-top:40px;">电影频道</view>
+<view class="movieList" wx:for="{{movie_List}}" wx:key="{{index}}">
+  <view class="classname" style="margin:10px;float:left;">
+    <image src="{{item.src}}" style="height: 100px;width: 100px;" bindtap="movie_show" data-id="{{item.id}}"></image>
+  </view>
+</view>
+
+<view class="movie" style="font:800 30px '';">音乐频道</view>
+<view class="movieList" wx:for="{{music_List}}" wx:key="{{index}}">
+  <view class="classname" style="margin:30px;float:left;">
+    <image src="{{item.poster}}" style="height: 120px;width: 120px;" bindtap="music_show" data-id="{{item.id}}"></image>
+  </view>
+</view>

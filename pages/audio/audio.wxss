@@ -1,0 +1,12 @@
+.music{
+    padding: 20px;
+}
+.musicPoster image{
+    height: 80px;
+    width: 80px;
+}
+.music_x{
+    float: right;
+    font:14px "微软雅黑";
+    margin-top: 20px;
+    }

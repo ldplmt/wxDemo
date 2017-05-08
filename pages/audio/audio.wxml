@@ -1,0 +1,21 @@
+<audio poster="{{music.poster}}" name="{{music.name}}" author="{{music.author}}" src="{{music.src}}" id="myAudio" controls bindended="endedHandle" bindtimeupdate="play"></audio>
+<view class="classname" style="color:red;">{{show}}</view>
+<view class="classname">
+<progress percent="{{nowplay}}" show-info/>
+</view>
+<button type="primary" bindtap="audio24">上一首</button>
+<button type="primary" bindtap="audioPlay">播放/暂停</button>
+<button type="primary" bindtap="audio14">下一首</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+<button type="primary" bindtap="audio34">快进</button>
+<scroll-view scroll-y="true" style="height: {{scrollHeight}}px">
+  <view wx:for="{{musicList}}" wx:key="{{index}}" class="music">
+    <view class="musicPoster">
+      <image src="{{item.poster}}" data-idx="{{item.id}}"  bindtap="playMusic"></image>
+      <view class="music_x">
+        <view class="musicName">歌曲：{{item.name}}</view>
+        <view class="musicAuthor" style="font-size:10px;">歌手：{{item.author}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

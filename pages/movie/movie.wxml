@@ -1,0 +1,11 @@
+<view class="classname" style="font:800 40px '';margin:20px;">华语电影</view>
+<view class="movie">
+  <view class="movieList" wx:for="{{movie_List}}" wx:key="{{index}}">
+    <view class="classname" style="margin:10px;float:left;">
+      <image src="{{item.src}}" style="height: 120px;width: 150px;"  bindtap="movie_show" data-id="{{item.id}}"></image>
+      <view class="title" style="color:#00f;margin:10px;">{{item.title}} 
+           <span style="margin:10px;color:red;">{{item.rating}}             </span> 
+      </view>
+    </view>
+  </view>
+</view>

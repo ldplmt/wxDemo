@@ -1,0 +1,45 @@
+
+{
+  "pages":[    
+     "pages/index/index",   
+     "pages/audio/audio",
+    "pages/movie/movie",
+    "pages/video/video", 
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/movieDetail/movieDetail"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Happy",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#2aa515",
+    "backgroundColor":"#f5f5f5",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"./public/image/icon/home.png",
+      "selectedIconPath":"./public/image/icon/home_selected.png"
+    }, {
+      "pagePath": "pages/audio/audio",
+      "text": "音乐",
+      "iconPath":"./public/image/icon/audio.png",
+      "selectedIconPath":"./public/image/icon/audio_selected.png"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath":"./public/image/icon/movie.png",
+      "selectedIconPath":"./public/image/icon/movie_selected.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath":"./public/image/icon/my.png",
+      "selectedIconPath":"./public/image/icon/my_selected.png"
+    }]
+  }
+}
